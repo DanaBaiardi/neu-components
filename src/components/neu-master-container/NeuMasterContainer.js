@@ -6,8 +6,10 @@ const NeuMasterContainer = styled.div`
   background-color: ${(props) => props.darkMode ? '#102A43' : '#F2F5F9' };
 `;
 
-const NeuMasterContainerComponent = ({ darkMode }) => {
-  return <NeuMasterContainer darkMode ={darkMode}></NeuMasterContainer>;
+const NeuMasterContainerComponent = ({ darkMode, children }) => {
+  return <NeuMasterContainer darkMode ={darkMode}>
+      {children}
+  </NeuMasterContainer>;
 };
 
 export default NeuMasterContainerComponent;
